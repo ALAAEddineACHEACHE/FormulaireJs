@@ -26,7 +26,7 @@ if(password.value==="" || password.value.length<3 || password.value.length>15){
 }else{
     password.style.border="2px solid fuchsia";
 }
-if(ConfirmPassword.value!=password.value ){
+if(ConfirmPassword.value!=password.value || ConfirmPassword.value===""){
     ConfirmPassword.style.border="2px solid red";
     const error4 = document.getElementById("error4").textContent="Les deux mots de passes ne sont pas égaux";
 }else{
